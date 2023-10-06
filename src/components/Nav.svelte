@@ -61,6 +61,7 @@
 
 <nav>
 	{#if $session.token}
+		<li><a aria-current="{segment === 'overview' ? 'page' : undefined}" href="overview" >Overview</a></li>
 		<li><a aria-current="{segment === 'logout' ? 'page' : undefined}" href="{logout}" on:click|preventDefault={logout}>Log out</a></li>
 	{:else}
 		<li><a aria-current="{segment === 'register' ? 'page' : undefined}" href="register">Register</a></li>
