@@ -21,6 +21,7 @@
 {#if process.browser}
     {#await getMyData()}
         Loading...
+
     {:then my}
         <section>
             <p style="font-size: xx-large">{my.name}</p>
